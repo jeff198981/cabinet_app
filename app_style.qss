@@ -1,0 +1,183 @@
+/* Personnel Register - subtle modern style (no major layout changes) */
+
+QWidget {
+    font-family: 'Microsoft YaHei','Segoe UI',sans-serif;
+    font-size: 10pt;
+    color: #1f2328;
+    background: #f5f6f8;
+}
+
+/* Top bar container */
+QFrame#topBar {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+}
+
+QLabel {
+    background: transparent;
+}
+
+/* Inputs */
+QLineEdit, QDateTimeEdit {
+    background: #ffffff;
+    border: 1px solid #c7cdd6;
+    border-radius: 6px;
+    padding: 6px 8px;
+    min-height: 28px;
+}
+
+QLineEdit:focus, QDateTimeEdit:focus {
+    border: 1px solid #2f81f7;
+}
+
+QComboBox {
+    background: #ffffff;
+    border: 1px solid #c7cdd6;
+    border-radius: 6px;
+    padding: 5px 30px 5px 8px;
+    min-height: 28px;
+}
+
+QComboBox:focus {
+    border: 1px solid #2f81f7;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 26px;
+    border-left: 1px solid #c7cdd6;
+}
+
+QComboBox::down-arrow {
+    width: 10px;
+    height: 10px;
+}
+
+/* Checkboxes */
+QCheckBox {
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+/* Buttons */
+QPushButton {
+    background: #ffffff;
+    border: 1px solid #c7cdd6;
+    border-radius: 6px;
+    padding: 6px 14px;
+    min-height: 30px;
+}
+
+QPushButton:hover {
+    background: #f0f6ff;
+    border: 1px solid #9bb9f5;
+}
+
+QPushButton:pressed {
+    background: #dbeafe;
+    border: 1px solid #2f81f7;
+}
+
+QPushButton:disabled {
+    color: #8c959f;
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+}
+
+/* Default buttons in dialogs */
+QDialogButtonBox QPushButton {
+    min-width: 90px;
+}
+
+/* Group boxes */
+QGroupBox {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 6px;
+    color: #0969da;
+    background: #ffffff;
+}
+
+/* Table */
+QTableWidget#userTable {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    gridline-color: #e5e7eb;
+    selection-background-color: #dbeafe;
+    selection-color: #0b1f3a;
+}
+
+QHeaderView::section {
+    background: #eef2f7;
+    color: #24292f;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #d0d7de;
+    font-weight: 600;
+}
+
+QTableWidget::item {
+    padding: 6px 8px;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+QTableWidget::item:selected {
+    border-bottom: 1px solid #b6d4fe;
+}
+
+/* Menu bar */
+QMenuBar {
+    background: #ffffff;
+    border-bottom: 1px solid #d0d7de;
+}
+
+QMenuBar::item {
+    padding: 6px 10px;
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background: #f0f6ff;
+}
+
+QMenu {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+}
+
+QMenu::item {
+    padding: 6px 14px;
+}
+
+QMenu::item:selected {
+    background: #f0f6ff;
+}
+
+/* Status bar */
+QStatusBar {
+    background: #ffffff;
+    border-top: 1px solid #d0d7de;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+/* Message boxes / dialogs */
+QDialog {
+    background: #f5f6f8;
+}
